@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
+# 🛍️ E-Commerce App – Proyecto Integrador
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicación móvil de comercio electrónico desarrollada con **React Native y Expo**.  
+Su objetivo es permitir la navegación por productos, ver detalles y gestionar elementos del carrito.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tecnologías Utilizadas
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+| React Native
+| Expo 
+| React Navigation 
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📱 Características Principales
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Pantallas principales del flujo de compra  
+Listado de productos  
+Pantalla de detalle del producto  
+Carrito de compras  
+Navegación con **Stack + Tab + Drawer**  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🧩 Estructura del Proyecto
 
-When you're ready, run:
+ECOMMERCE-APP-SEMANA02
+│
+│
+│
+├── components/           # Componentes reutilizables UI
+│   ├── CartItem.tsx      # Componente del item en carrito
+│   ├── CustomDrawer.tsx  # Drawer personalizado
+│   ├── ProductCard.tsx   # Tarjeta de producto
+│   └── ReviewCard.tsx    # Tarjeta de reseña
+│
+│
+├── node_modules/         # Dependencias del proyecto
+│
+├── scripts/              # Scripts útiles del proyecto
+│
+├── src/                  # Código principal del proyecto
+│   │
+│   ├── components/       # Componentes UI dentro de src
+│   │
+│   ├── context/          # Context API – Estados globales
+│   │   └── CartContext.tsx
+│   │
+│   ├── data/             # Datos mock (productos, categorías, etc.)
+│   │
+│   ├── navigation/       # Sistema de navegación con Stack/Tab/Drawer
+│   │   ├── DrawerNavigator.tsx # Drawer principal
+│   │   ├── TabNavigator.tsx    # Tabs inferior
+│   │   ├── ProfileStack.tsx    # Navegación de perfil
+│   │   ├── CartStack.tsx       # Navegación de carrito
+│   │   └── HomeStack.tsx       # Navegación de inicio y detalles
+│   │
+│   ├── screens/          # Pantallas principales
+│   │   ├── HomeScreen.tsx
+│   │   ├── ProductScreen.tsx
+│   │   ├── CartScreen.tsx
+│   │   ├── ProfileScreen.tsx
+│   │   └── ReviewsScreen.tsx
+│   │
+│   ├── App.tsx           # Punto de entrada principal
 
-```bash
-npm run reset-project
-```
+│
+├── README.md             # Documentación del proyecto
+│
+└── package.json          # Dependencias + Scripts
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## ⚙️ Instalación y Ejecución
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Node.js + pnpm + Expo Go en tu celular
+2. Clona el repositorio:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone  https://github.com/manuelamarroquin/ecommerce-app.git
+cd ecommerce-app
+3. Instala dependencias:   (pnpm install)
+4. Ejecuta la app: (pnpm start)
+5. Escanea el QR en Expo Go 
